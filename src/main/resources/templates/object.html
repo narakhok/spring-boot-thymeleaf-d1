@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul th:object="${u}">
+		<li th:text="*{id}"></li>
+		<li th:text="*{name}"></li>
+		<li th:text="*{gender}"></li>
+		<li th:text="*{image}"></li>
+	</ul>
+	
+	<ul>
+		<li th:text="${u.id}"></li>
+		<li th:text="${u.name}"></li>
+		<li th:text="${u.gender}"></li>
+		<li th:text="${u.image}"></li>
+	</ul>
+	
+
+</body>
+</html>
