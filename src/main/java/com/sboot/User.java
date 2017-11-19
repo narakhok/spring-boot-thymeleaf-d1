@@ -1,22 +1,22 @@
 package com.sboot;
 public class User {
 	
-	private String id;
+	private int id;
 	private String name;
 	private String gender;
 	private String image;	
 	
-	public User(String id, String name, String gender, String image) {
+	public User(int id, String name, String gender, String image) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
 		this.image = image;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
